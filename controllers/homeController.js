@@ -3,6 +3,7 @@ weatherApp.controller('HomeCtrl',['$scope','$resource','weatherService',function
 	
 	// Watch city name and update city inside weatherService. It is read by mainController.
 	
+	$scope.a=10;
 	$scope.$watch('city',function(){
 		weatherService.city=$scope.city;
 	});

@@ -28,7 +28,19 @@ describe("HomeCtrl",function(){
 		});
 	});
 	
-
+	describe('check',function(){
+		var alertTable;
+		
 	
+		beforeEach(function() {
+			alertTable = $('#alertTable');
+			$(document.body).append(alertTable);
+		}); 
+
+		it('should have a redirect link which is set',function(){
+			alertTable.trigger('click');
+			expect($scope.link).toEqual("#/main");
+		});
+	});
 	
 });
