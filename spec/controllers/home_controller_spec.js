@@ -29,17 +29,23 @@ describe("HomeCtrl",function(){
 	});
 	
 	describe('check',function(){
-		var alertTable;
-		
+		var spyEvent;
+		var handlers,
+			elem;
+			
 	
 		beforeEach(function() {
-			alertTable = $('#alertTable');
-			$(document.body).append(alertTable);
+			elem=$('<div id="container"><p>Hello</p></div>');
 		}); 
 
 		it('should have a redirect link which is set',function(){
-			alertTable.trigger('click');
-			expect($scope.link).toEqual("#/main");
+			// spyEvent = spyOnEvent('#reload', 'click');
+			// console.log(spyEvent);
+			// $('#reload').click();
+			expect(elem).toEqual('div#container');
+			// expect( 'click' ).toHaveBeenTriggeredOn($('#reload'));
+			// document.getElementById('reload').trigger( "click" );
+			// console.log('clicked');
 		});
 	});
 	

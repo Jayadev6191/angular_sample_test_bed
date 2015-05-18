@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "jasmine-jquery": "~2.1.0",
+    "jquery": "~2.1.4"
+  }
 }

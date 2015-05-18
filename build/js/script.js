@@ -91,6 +91,11 @@ weatherApp.controller('HomeCtrl',['$scope','$resource','weatherService',function
 		window.location.href=$scope.link;
 	};
 	
+	$scope.reload=function(){
+		$scope.a=10;
+		// location.reload();
+	};
+	
 }]);
 weatherApp.controller('MainCtrl',['$scope','$resource','$routeParams','weatherService','renderChart',function($scope,$resource,$routeParams,weatherService,renderChart){	
 	$scope.redirect=function(){

@@ -30,6 +30,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "^0.10.1",
     "jasmine-core": "^2.3.0",
+    "jasmine-jquery": "^2.0.6",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.8",
     "karma-coverage": "^0.3.1",
