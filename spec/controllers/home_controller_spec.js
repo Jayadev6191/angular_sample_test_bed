@@ -35,17 +35,17 @@ describe("HomeCtrl",function(){
 			
 	
 		beforeEach(function() {
-			elem=$('<div id="container"><p>Hello</p></div>');
+			// elem=$('<div id="container"><p>Hello</p></div>');
+			setFixtures('<div id="container"><p>Hello</p></div>');
 		}); 
 
 		it('should have a redirect link which is set',function(){
-			// spyEvent = spyOnEvent('#reload', 'click');
-			// console.log(spyEvent);
-			// $('#reload').click();
-			expect(elem).toEqual('div#container');
-			// expect( 'click' ).toHaveBeenTriggeredOn($('#reload'));
-			// document.getElementById('reload').trigger( "click" );
-			// console.log('clicked');
+			spyEvent = spyOnEvent('#container_2', 'click');
+			$('#reload').click();
+			// expect(elem).toEqual('div#container');
+			// expect(elem).toContainText('Hello');
+			expect('click').toHaveBeenTriggeredOn($('#container'));
+			expect(spyEvent).toHaveBeenTriggered();
 		});
 	});
 	

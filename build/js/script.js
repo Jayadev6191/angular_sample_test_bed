@@ -93,7 +93,7 @@ weatherApp.controller('HomeCtrl',['$scope','$resource','weatherService',function
 	
 	$scope.reload=function(){
 		$scope.a=10;
-		// location.reload();
+		location.reload();
 	};
 	
 }]);
